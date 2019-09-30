@@ -67,7 +67,7 @@ node.2 = function(para.input, t.max.in, g.in, h.in, z.in, gamma.in,u.in, v.in){
   
   # add the penalty term here:
   for (l in 1:n.z){
-    obj = obj + 1/2 * gamma.in * sum(para.input.2[,l]^2)
+    obj = obj + 1/2 * gamma.in * sqrt(sum(para.input.2[,l]^2))
   }
   
   return(obj)
